@@ -25,7 +25,7 @@ def handler(context: dict, request: Request) -> Response:
     outputs = model(prompt)
 
     return Response(
-        json = {"outputs": outputs[0]}, 
+        json = {"outputs": outputs}, 
         status=200
     )
 
